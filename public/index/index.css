@@ -1,0 +1,133 @@
+:root {
+    --white: #FFFFFF;
+    
+    --lightNavy: #1C213D;
+    --darkNavy: #020827;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkNavy);
+}
+
+#exchangeWidget {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--white);
+
+    width: 400px;
+    height: 500px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    background: var(--lightNavy);
+    backdrop-filter: blur(70px);
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+
+#intputAmountArea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#intputAmount{
+    background: var(--lightNavy);
+    color: var(--white);
+    font-size: 17px;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+
+#currencyArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.currencyContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#fromCurrencyArea,
+#toCurrencyArea{
+    flex: 1;
+    display: flex;
+    gap: 5px;
+
+    background: var(--lightNavy);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+#fromCurrencyArea img,
+#toCurrencyArea img{
+    width: 30px;
+}
+
+#fromCurrencyArea select,
+#toCurrencyArea select{
+    flex: 1;
+    background: var(--lightNavy);
+    color: var(--white);
+    font-size: 16px;
+    border: none;
+}
+
+
+#exchnageButton{
+    background: var(--lightNavy);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+#outputAmount{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background: var(--darkNavy);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}

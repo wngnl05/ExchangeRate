@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-
-    <!-- CSS 파일 연결 -->
+    <title>ExchangeRate</title>
     <link rel="stylesheet" href="/index/index.css">
 </head>
-<body>
-    <h1>Welcome to the Home Page!</h1>
-    <p>This is a sample page with external CSS and JavaScript.</p>
 
-    <!-- JS 파일 연결 -->
+<body>
+
+    <div id="exchangeWidget">
+
+        <header>
+            <h2>currency conveter</h2>
+        </header>
+
+        <div id="intputAmountArea">
+            <label>Enter Amount</label>
+            <input id="intputAmount" type="number">
+        </div>
+
+        <div id="currencyArea">
+            <div class="currencyContainer">
+                <label>From</label>
+                <div id="fromCurrencyArea">
+                    <img src="">
+                    <select onchange="changeCountry(this)"></select>
+                </div>
+            </div>
+
+            <div>
+                <br>
+                <svg  width="30" height="30" fill="#000000" viewBox="0 0 24 24" id="exchange-3" xmlns="http://www.w3.org/2000/svg" class="icon line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><polyline id="primary" points="4 14 20 14 17 17" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"></polyline><polyline id="primary-2" data-name="primary" points="20 10 4 10 7 7" style="fill: none; stroke: #ffffff; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.5;"></polyline></g></svg>
+            </div>
+
+            <div class="currencyContainer">
+                <label>To</label>
+                <div id="toCurrencyArea">
+                    <img src="">
+                    <select onchange="changeCountry(this)"></select>
+                </div>
+            </div>
+        </div>
+
+        <button id="exchnageButton">Get Exchange Rate</button>
+        <input id="outputAmount" type="text" placeholder="Ouput">
+    </div>
+
+
     <script src="/index/index.js"></script>
 </body>
 </html>
