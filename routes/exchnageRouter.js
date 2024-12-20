@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get("/", async (req, res) => {
-    // const response = await fetch("https://v6.exchangerate-api.com/v6/57091290c552da35519c7d5b/pair/USD/INR", {
+    // const response = await fetch("https://v6.exchangerate-api.com/v6//pair/USD/INR", {
     //     method: "GET",
     //     headers: { "Content-Type": "application/json" },
     // }).then(response => response.json());
