@@ -1,2 +1,9 @@
-# ExchangeRate
-환율 계산기
+# Install
+```
+npm i
+```
+
+# Run
+```
+npm start
+```
