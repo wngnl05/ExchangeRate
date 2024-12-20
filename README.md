@@ -9,8 +9,6 @@
 npm install
 ```
 
-<br>
-
 # How to Run
 ```
 npm start
