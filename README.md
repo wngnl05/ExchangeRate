@@ -4,12 +4,5 @@
 
 <br>
 
-# How to install
-```
-npm install
-```
-
-# How to Run
-```
-npm start
-```
+# How to Run?
+https://github.com/user-attachments/assets/cd0f075b-a7a3-46e4-a802-99b54b907c0f
